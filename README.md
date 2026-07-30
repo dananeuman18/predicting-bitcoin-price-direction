@@ -86,23 +86,6 @@ Raw OHLCV plus engineered technical indicators:
 
 ---
 
-## Repository structure
-
-```
-ads504-bitcoin-project/
-├── data/                     # local market data (git-ignored — see "Getting the data")
-├── notebooks/
-│   ├── 01_eda_preprocessing.ipynb    # load, clean, explore, handle outliers/missing
-│   ├── 02_feature_engineering.ipynb  # indicators + target construction
-│   └── 03_modeling.ipynb             # train, validate, compare the 4 models
-├── src/                      # optional: shared helper code (data loading, indicators)
-├── reports/figures/          # exported plots for the report / slides
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## Getting the data
 
 Raw market data is **not** committed (it's large and reproducible). Download it locally:
